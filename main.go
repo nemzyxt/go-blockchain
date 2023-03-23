@@ -11,8 +11,8 @@ type BlockChain struct {
 }
 
 type Block struct {
-	Hash []byte
-	Data []byte
+	Hash     []byte
+	Data     []byte
 	PrevHash []byte
 }
 
