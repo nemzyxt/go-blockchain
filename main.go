@@ -28,6 +28,12 @@ func CreateBlock(data string, PrevHash []byte) *Block {
 	return block
 }
 
+func (chain *BlockChain) AddBlock(data string) {
+	prevBlock := chain.blocks[len(chain.blocks)-1]
+	new := CreateBlock(data, prevBlock.PrevHash)
+	chain.blocks = append(chain.blocks, new)
+}
+
 func main() {
 	fmt.Println("Hello, World!")
 }
