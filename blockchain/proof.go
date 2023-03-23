@@ -6,5 +6,4 @@ package blockchain
  * Generate a hash using the data and the nonce
  * Check whether the hash meets certain requirements
  * Requirements :
-	- The hash has to contain 0s
- */
+	- The first bytes of the hash must contain 0s
