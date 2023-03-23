@@ -7,3 +7,4 @@ package blockchain
  * Check whether the hash meets certain requirements
  * Requirements :
 	- The first bytes of the hash must contain 0s
+ */
