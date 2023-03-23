@@ -6,6 +6,10 @@ import (
 	"fmt"
 )
 
+type BlockChain struct {
+	blocks []*Block
+}
+
 type Block struct {
 	Hash []byte
 	Data []byte
